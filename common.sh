@@ -12,6 +12,6 @@ function random_password {
     new_password=$(cat /dev/urandom | tr -dc 'A-Za-z0-9' | fold -w ${password_length} | head -n 1)
     echo "${new_password}"
 }
-workshop_accounts=$(echo workshop{01..50})
+workshop_accounts=$(echo workshop{01..75})
 instructor_accounts=$(echo instructor{01..05})
 
